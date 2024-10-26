@@ -177,7 +177,7 @@ for index, row in enumerate(ws.rows, start=1):
         ws.cell(row=index, column=8).value = start_day_of_prev_month
         ws.cell(row=index, column=9).value = last_day_of_prev_month
         ws.cell(row=index, column=13).value = 3 # 3 for VV, 2 for brygg, 1 for bh
-        ws.cell(row=index, column=14).value = '9045' #spørre Remi/sjekke mail
+        ws.cell(row=index, column=14).value = '9045' #spørre/sjekke mail
         ws.cell(row=index, column=24).value = 'x'
 
 
