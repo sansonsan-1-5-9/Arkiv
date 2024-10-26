@@ -99,7 +99,7 @@ for index, row in enumerate(ws.rows, start=1):
         ws.cell(row=index, column=8).value = start_day_of_prev_month
         ws.cell(row=index, column=9).value = last_day_of_prev_month
         ws.cell(row=index, column=13).value = 3 # 3 for VV, 2 for brygg, 1 for Bergenshallen
-        ws.cell(row=index, column=14).value = '9045' #spørre Remi/sjekke mail
+        ws.cell(row=index, column=14).value = '9045' #spørre/sjekke mail
         ws.cell(row=index, column=24).value = 'x'
 
 
@@ -125,7 +125,7 @@ for index, row in enumerate(ws.rows, start=1):
         ws.cell(row=index, column=8).value = start_day_of_prev_month
         ws.cell(row=index, column=9).value = last_day_of_prev_month
         ws.cell(row=index, column=13).value = 3 # 3 for VV, 2 for brygg, 1 for bh
-        ws.cell(row=index, column=14).value = '9045' #spørre Remi/sjekke mail
+        ws.cell(row=index, column=14).value = '9045' #spørre/sjekke mail
         ws.cell(row=index, column=24).value = 'x'
 
 
@@ -153,11 +153,11 @@ for index, row in enumerate(ws.rows, start=1):
         ws.cell(row=index, column=8).value = start_day_of_prev_month
         ws.cell(row=index, column=9).value = last_day_of_prev_month
         ws.cell(row=index, column=13).value = 3 # 3 for VV, 2 for brygg, 1 for bh
-        ws.cell(row=index, column=14).value = '9045' #spørre Remi/sjekke mail
+        ws.cell(row=index, column=14).value = '9045' #spørre/sjekke mail
         ws.cell(row=index, column=24).value = 'x'
 
 
-    #Følgende elif tar for seg VASK I BRYGGERIET timeplan
+    #Følgende elif tar for seg VASK I br timeplan
     elif ws.cell(row=index, column=13).value in ['Vask Bryggeriet - Timeplan']:
         if ws.cell(row=index, column=3).value: #Sjekker om det er et ansattnummer
             ws.cell(row=index, column=1).value = ws.cell(row=index, column=3).value
@@ -197,7 +197,7 @@ ws.insert_cols(15,2)
 
 
 
-#Endrer overskriften på kolonnene til å stemme overens med xLedger-format
+#Endrer overskriften på kolonnene til å stemme overens med rett format
 ws.delete_rows(1)
 ws.insert_rows(1)
 ws['A1']='Employee'
